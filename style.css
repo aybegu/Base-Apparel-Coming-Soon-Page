@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-desktop.svg);
+}
+
+.card{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-part{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10rem;
+    /* gap: 3rem; */
+}
+
+.logo{
+    position: absolute;
+    top: 3rem;
+}
+
+.info{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.info .title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 65px;
+    letter-spacing: 1rem;
+    line-height: 4.5rem;
+    color: var(--Dark-Grayish-Red);
+    margin-bottom: .5rem;
+}
+
+.info .text{
+    font-size: 16px;
+    color: var(--Desaturated-Red);
+    /* letter-spacing: .8px; */
+    line-height: 1.7rem;
+}
+
+.email-bar{
+    width: 90%;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.email-bar .email-address{
+    color: var(--Desaturated-Red);
+    opacity: .5;
+}
+
+.email-bar button{
+    border: none;
+    position: absolute;
+    /* left: 35.5rem; */
+    left: 570px;
+    border-radius: 2rem;
+    padding: 16px 45px;
+    background-color: var(--Soft-Red);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    /* box-shadow: 0 20px 20px 10px rgba(240, 152, 152, 0.3); */
+    box-shadow: 0 16px 20px 2px hsla(0, 36%, 70%,.3);
+}
+
+.image-part{
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
